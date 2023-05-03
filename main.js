@@ -42,12 +42,43 @@ const episodes = [
 
 ]
 
+const seasonButtons = document.querySelectorAll(".season-button");
 const button = document.getElementById("get-random-episode");
 const container = document.getElementById("episode-container");
+let excludedSeasons = [];
+
+function updateExcludedSeasons() {
+  excludedSeasons = [];
+  seasonButtons.forEach(function(button) {
+    if (button.classList.contains("excluded")) {
+      excludedSeasons.push(parseInt(button.dataset.season));
+    }
+  });
+}
+
+function toggleSeasonExclusion(event) {
+  const button = event.currentTarget;
+  const season = parseInt(button.dataset.season);
+  button.classList.toggle("excluded");
+  updateExcludedSeasons();
+}
+
+seasonButtons.forEach(function(button) {
+  button.addEventListener("click", toggleSeasonExclusion);
+});
 
 button.addEventListener("click", function() {
-  const randomIndex = Math.floor(Math.random() * episodes.length);
-  const randomEpisode = episodes[randomIndex];
+  const validEpisodes = episodes.filter(function(episode) {
+    return !excludedSeasons.includes(episode.season);
+  });
+  if (validEpisodes.length === 0) {
+    container.textContent = "No episodes found.";
+    return;
+  }
+  const randomIndex = Math.floor(Math.random() * validEpisodes.length);
+  const randomEpisode = validEpisodes[randomIndex];
   const episodeInfo = `Season ${randomEpisode.season}, Episode ${randomEpisode.episode}: ${randomEpisode.title} - ${randomEpisode.description}`;
   container.textContent = episodeInfo;
 });
+
+updateExcludedSeasons();
