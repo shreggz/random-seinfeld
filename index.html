@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Seinfeld Generator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
+    <script src="random.js" defer></script>
 </head>
 <body>
-    <div>
-        <button class="season-button" data-season="1">Season 1</button>
-        <button class="season-button" data-season="2">Season 2</button>
-        <button class="season-button" data-season="3">Season 3</button>
-        <button class="season-button" data-season="4">Season 4</button>
-        <button class="season-button" data-season="5">Season 5</button>
-        <button class="season-button" data-season="6">Season 6</button>
-        <button class="season-button" data-season="7">Season 7</button>
-        <button class="season-button" data-season="8">Season 8</button>
-        <button class="season-button" data-season="9">Season 9</button>
-    </div>
-    <button id="get-random-episode">Get Random Episode</button>
-    <div id="episode-container"></div>  
+    <header>
+        <figure><img src="seinfeld-logo.webp" alt="Seinfeld logo"></figure>
+        <h1>Random Episode Generator</h1>
+    </header>
+    <main>
+        <section class="season-filters">
+            <p>Click on season(s) to exclude:</p>
+            <button class="season-button" data-season="1">1</button>
+            <button class="season-button" data-season="2">2</button>
+            <button class="season-button" data-season="3">3</button>
+            <button class="season-button" data-season="4">4</button>
+            <button class="season-button" data-season="5">5</button>
+            <button class="season-button" data-season="6">6</button>
+            <button class="season-button" data-season="7">7</button>
+            <button class="season-button" data-season="8">8</button>
+            <button class="season-button" data-season="9">9</button>
+        </section>
+        <button id="get-random-episode">Get Random Episode</button>
+        <hr>
+        <section id="episode-container"></section>  
+    </main>
 </body>
 </html>
