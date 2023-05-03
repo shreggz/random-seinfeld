@@ -63,6 +63,28 @@ const episodes = [
     { season: 4, episode: 22, title: "The Handicap Spot", description: "Kramer convinces George to make an unfortunate parking decision. Kramer dates a wheelchair user. The gang buys a TV for a couple that breaks up." },
     { season: 4, episode: 23, title: "The Pilot, Part I", description: "George and Jerry finally produce their sitcom pilot. George is bothered by a spot on his lip. Elaine thinks Monk's only hires large-breasted servers. NOTE: This is a double header, so you should really watch Season 4, Episode 24: 'The Pilot, Part II' next." },
     { season: 4, episode: 24, title: "The Pilot, Part II", description: "George and Jerry finally produce their sitcom pilot. George is bothered by a spot on his lip. Elaine thinks Monk's only hires large-breasted servers. NOTE: This is a double header, so you should really watch Season 4, Episode 23: 'The Pilot, Part I' first." },
+    { season: 5, episode: 1, title: "The Mango", description: "George struggles to satisfy his new girlfriend. Elaine admits to faking it with Jerry in the past. Kramer gets banned from a fruit stand." },
+    { season: 5, episode: 2, title: "The Puffy Shirt", description: "Kramer dates a 'low talker,' leading to an embarrassing fashion moment for Jerry on TV. George gets noticed for his 'exquisite hands.'" },
+    { season: 5, episode: 3, title: "The Glasses", description: "George creates a fiasco involving a sugar-addicted optometrist, ladies' eyeglasses, and Jerry's girlfriend. Elaine thinks a dog bite gives her rabies." },
+    { season: 5, episode: 4, title: "The Sniffing Accountant", description: "Jerry and Kramer think their accountant is on drugs. Elaine fights with her boyfriend about punctuation. George interviews to be a bra salesman." },
+    { season: 5, episode: 5, title: "The Bris", description: "Jerry and Elaine arrange an ill-fated circumcision ceremony. George's good parking spot at a hospital gets ruined. Kramer sees a 'pig man.'" },
+    { season: 5, episode: 6, title: "The Lip Reader", description: "George gets caught on TV eating a messy sundae. Jerry dates a deaf tennis official. Kramer auditions to be a 'ball man.' Elaine fakes hearing loss." },
+    { season: 5, episode: 7, title: "The Non-Fat Yogurt", description: "The gang gets suspicious of a supposed 'non -fat' frozen yogurt shop. Elaine dates George's nemesis, Lloyd Braun. Jerry curses in front of a kid." },
+    { season: 5, episode: 8, title: "The Barber", description: "George starts a new job he knows nothing about and may never have even been offered. Jerry tries to switch barbers. Elaine hosts a bachelor auction." },
+    { season: 5, episode: 9, title: "The Masseuse", description: "Elaine dates a man who shares his name with a serial killer. George becomes oddly drawn to Jerry's masseuse girlfriend, who refuses to massage Jerry." },
+    { season: 5, episode: 10, title: "The Cigar Store Indian", description: "Jerry gives Elaine an offensive gift. Frank gets mad at Elaine over a 'TV Guide.' Kramer pitches a book about coffee tables. George gets grounded." },
+    { season: 5, episode: 11, title: "The Conversion", description: "George wants to convert to Latvian Orthodox. A sister at the church finds Kramer irresistible. Jerry discovers fungicide in his girlfriend's apartment." },
+    { season: 5, episode: 12, title: "The Stall", description: "A woman withholds toilet paper from Elaine. George becomes enamored with Elaine's 'cool guy' boyfriend. Kramer keeps calling a phone sex line." },
+    { season: 5, episode: 13, title: "The Dinner Party", description: "George and Kramer (and George's jacket) cause havoc at a wine shop. A babka and a black-and-white cookie spell trouble for Jerry and Elaine at a bakery." },
+    { season: 5, episode: 14, title: "The Marine Biologist", description: "Jerry tells George's ex-crush that George is now a marine biologist. Elaine has a run-in with a Russian author. Kramer hits golf balls into the ocean." },
+    { season: 5, episode: 15, title: "The Pie", description: "Jerry's girlfriend's father, Poppie, is 'a little sloppy.' Kramer notices a mannequin looks just like Elaine. George buys a suit that 'swooshes.'" },
+    { season: 5, episode: 16, title: "The Stand-In", description: "Kramer gives questionable advice to his friend, Mickey. Jerry tries to cheer up his hospitalized friend. Elaine dates a man who 'took it out.'" },
+    { season: 5, episode: 17, title: "The Wife", description: "Jerry's girlfriend poses as his wife for a dry cleaning discount. Elaine gets mixed signals from a guy at the gym. George pees in the shower." },
+    { season: 5, episode: 18, title: "The Raincoats, Part I", description: "Elaine dates a 'close talker.' George sells Frank's old clothes. Kramer and Morty try to sell raincoats. Jerry and his girlfriend see 'Schindler's List.' NOTE: This is a double header, so you should really watch Season 5, Episode 19: 'The Raincoats, Part II' next." },
+    { season: 5, episode: 19, title: "The Raincoats, Part II", description: "Elaine dates a 'close talker.' George sells Frank's old clothes. Kramer and Morty try to sell raincoats. Jerry and his girlfriend see 'Schindler's List.' NOTE: This is a double header, so you should really watch Season 5, Episode 18: 'The Raincoats, Part I' first." },
+    { season: 5, episode: 20, title: "The Fire", description: "George struggles to keep his cool in a fire. Elaine's co-worker heckles Jerry's act, and Jerry's retaliation causes an accident." },
+    { season: 5, episode: 21, title: "The Hamptons", description: "The a gang visits a friend's new baby in the Hamptons. George's girlfriend goes topless. A doctor's wording puzzles Elaine. George experiences 'shrinkage.'" },
+    { season: 5, episode: 22, title: "The Opposite", description: "George does the opposite of everything his instincts say. Jerry is 'Even Steven.' Kramer promotes his coffee table book. Elaine falls on hard times." },
 
 ]
 
@@ -106,3 +128,4 @@ button.addEventListener("click", function() {
 });
 
 updateExcludedSeasons();
+
