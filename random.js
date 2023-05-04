@@ -39,12 +39,12 @@ const episodes = [
     { season: 3, episode: 21, title: "The Letter", description: "Jerry dates an artist who a paints a portrait of Kramer. George feels obligated to buy art. Elaine wears a Baltimore cap to a Yankees game." },
     { season: 3, episode: 22, title: "The Parking Space", description: "Kramer's friend, Mike, calls Jerry 'phony.' George and Mike fight over a parallel parking spot. Jerry inadvertently breaks some bad news to a child." },
     { season: 3, episode: 23, title: "The Keys", description: "Jerry asks for his spare keys back from Kramer, who then moves to California. George and Jerry discover Elaine wrote a script for 'Murphy Brown.'" },
-    { season: 4, episode: 1, title: "The Trip, Part I", description: "George and Jerry go to LA for Jerry to appear on the Tonight Show. Kramer struggles to land acting roles. George annoys George Wendt and Corbin Bernsen. NOTE: This is a double header, so you should really watch Season 4, Episode 2: 'The Trip, Part II' next." },
-    { season: 4, episode: 2, title: "The Trip, Part II", description: "After Kramer is detained in LA as a suspect in a string of murders, George and Jerry try to clear Kramer's name and reunite with their friend. NOTE: This is a double header, so you should really watch Season 4, Episode 1: 'The Trip, Part I' first." },
-    { season: 4, episode: 3, title: "The Pitch", description: "Jerry and George develop a sitcom pitch for NBC, and George dates a network executive. Kramer is kicked in the head. Newman gets a speeding ticket. NOTE: This is a double header, so you should really watch Season 4, Episode 4: 'The Ticket' next." },
-    { season: 4, episode: 4, title: "The Ticket", description: "Jerry and George develop a sitcom pitch for NBC, and George dates a network executive. Kramer is kicked in the head. Newman gets a speeding ticket. NOTE: This is a double header, so you should really watch Season 4, Episode 3: 'The Pitch' first." },
-    { season: 4, episode: 5, title: "The Wallet", description: "Morty claims a doctor stole his wallet. Elaine attempts to break up with her psychiatrist boyfriend. George negotiates the pilot deal with NBC. NOTE: This is a double header, so you should really watch Season 4, Episode 6: 'The Watch' next." },
-    { season: 4, episode: 6, title: "The Watch", description: "Jerry tries to buy his old watch back from Uncle Leo. George makes a desperate plea to Russell Dalrymple. Kramer poses as Elaine's boyfriend. NOTE: This is a double header, so you should really watch Season 4, Episode 5: 'The Wallet' first." },
+    { season: 4, episode: 1, title: "The Trip, Part I", description: "George and Jerry go to LA for Jerry to appear on the Tonight Show. Kramer struggles to land acting roles. George annoys George Wendt and Corbin Bernsen.<br>NOTE: This is a double header, so you should really watch Season 4, Episode 2: 'The Trip, Part II' next." },
+    { season: 4, episode: 2, title: "The Trip, Part II", description: "After Kramer is detained in LA as a suspect in a string of murders, George and Jerry try to clear Kramer's name and reunite with their friend.<br>NOTE: This is a double header, so you should really watch Season 4, Episode 1: 'The Trip, Part I' first." },
+    { season: 4, episode: 3, title: "The Pitch", description: "Jerry and George develop a sitcom pitch for NBC, and George dates a network executive. Kramer is kicked in the head. Newman gets a speeding ticket.<br>NOTE: This is a double header, so you should really watch Season 4, Episode 4: 'The Ticket' next." },
+    { season: 4, episode: 4, title: "The Ticket", description: "Jerry and George develop a sitcom pitch for NBC, and George dates a network executive. Kramer is kicked in the head. Newman gets a speeding ticket.<br>NOTE: This is a double header, so you should really watch Season 4, Episode 3: 'The Pitch' first." },
+    { season: 4, episode: 5, title: "The Wallet", description: "Morty claims a doctor stole his wallet. Elaine attempts to break up with her psychiatrist boyfriend. George negotiates the pilot deal with NBC.<br>NOTE: This is a double header, so you should really watch Season 4, Episode 6: 'The Watch' next." },
+    { season: 4, episode: 6, title: "The Watch", description: "Jerry tries to buy his old watch back from Uncle Leo. George makes a desperate plea to Russell Dalrymple. Kramer poses as Elaine's boyfriend.<br>NOTE: This is a double header, so you should really watch Season 4, Episode 5: 'The Wallet' first." },
     { season: 4, episode: 7, title: "The Bubble Boy", description: "Jerry, George, Elaine, and Susan visit a boy who lives in a plastic bubble. George and the boy argue over Trivial Pursuit. Jerry regrets an autograph." },
     { season: 4, episode: 8, title: "The Cheever Letters", description: "Susan learns an uncomfortable truth about her father after telling him about the cabin. Jerry's dirty talk offends his date. Kramer seeks Cuban cigars." },
     { season: 4, episode: 9, title: "The Opera", description: "George and Kramer try to sell extra tickets to 'Pagliacci' on the street. Elaine and Jerry discover their separate connections to Joe Davola." },
@@ -216,9 +216,10 @@ button.addEventListener("click", function() {
   }
   const randomIndex = Math.floor(Math.random() * validEpisodes.length);
   const randomEpisode = validEpisodes[randomIndex];
-  const episodeInfo = `Season ${randomEpisode.season}, Episode ${randomEpisode.episode}: ${randomEpisode.title} - ${randomEpisode.description}`;
-  container.textContent = episodeInfo;
+  const episodeInfo = `<h2>Season ${randomEpisode.season}, Episode ${randomEpisode.episode}: ${randomEpisode.title}</h2>
+  <p>${randomEpisode.description}</p>`;
+
+  container.innerHTML = episodeInfo;
 });
 
 updateExcludedSeasons();
-

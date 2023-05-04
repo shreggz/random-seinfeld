@@ -10,12 +10,12 @@
 </head>
 <body>
     <header>
-        <figure><img src="seinfeld-logo.webp" alt="Seinfeld logo"></figure>
+        <figure><a href="index.html"><img src="seinfeld-logo.webp" alt="Seinfeld logo"></a></figure>
         <h1>Random Episode Generator</h1>
     </header>
     <main>
+        <p>Click season(s) to exclude:</p>
         <section class="season-filters">
-            <p>Click on season(s) to exclude:</p>
             <button class="season-button" data-season="1">1</button>
             <button class="season-button" data-season="2">2</button>
             <button class="season-button" data-season="3">3</button>
@@ -26,9 +26,13 @@
             <button class="season-button" data-season="8">8</button>
             <button class="season-button" data-season="9">9</button>
         </section>
-        <button id="get-random-episode">Get Random Episode</button>
-        <hr>
-        <section id="episode-container"></section>  
+        <button id="get-random-episode">Giddyup!</button>
+        <section id="episode-container">
+            <h2>What's the deal with this site?</h2>
+            <p>Seinfeld is my favorite TV show. I like to pick out random episodes to rewatch, but often want to filter out certain seasons. So I built a tool that can do both. It's mainly for myself, but I hope you find it useful too. If you find any bugs, let me know:</p>
+            <p>sridhar.bhagavathula@gmail.com.</p>
+            <p>&mdash;Sridhar</p>
+        </section>  
     </main>
 </body>
 </html>
