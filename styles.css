@@ -109,7 +109,7 @@ main > p {
   font-size: 1.45rem;
 }
 
-/* Lines & Breaks */
+/* Lines, Links, & Breaks */
 
 hr {
   width: 100%;
@@ -123,4 +123,13 @@ br {
   display: block;
   content: "";
   margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(186, 7, 7);
+}
+
+a:hover {
+  background-color: rgb(238, 226, 99);
 }
