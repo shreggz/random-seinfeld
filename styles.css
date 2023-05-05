@@ -1,5 +1,8 @@
+/* General */
+
 * {
   font-family: "Gill Sans", sans-serif;
+  box-sizing: border-box; /* iffy on this */
 }
 
 body {
@@ -12,6 +15,8 @@ body {
   color: #444444;
 }
 
+/* Header */
+
 header {
   display: flex;
   flex-direction: column;
@@ -20,24 +25,19 @@ header {
 
 header > figure {
   text-align: left;
-  margin: 0px;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
 }
 
 img {
   max-width: 50%;
 }
 
+/* Main */
+
 main {
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-
-main > p {
-  text-align: left;
-  margin: 0px;
-  font-size: 1.4rem;
 }
 
 .season-filters {
@@ -63,44 +63,6 @@ main > p {
 
 }
 
-hr {
-  width: 100%;
-  margin-top: 24px;
-  margin-bottom: 8px;
-  margin-left: 0px;
-  border: none;
-  height: 4px;
-  background-color: #444444;
-}
-
-h1 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-top: 0px;
-  margin-bottom: 32px;
-}
-
-h2 {
-  text-align: left;
-  font-weight: 600;
-  font-size: 1.6rem;
-  margin: 0;
-  margin-top: -32px;
-}
-
-#episode-container > p {
-  line-height: 135%;
-  font-size: 1.45rem;
-  font-weight: 500;
-}
-
-
-br {
-  display: block;
-  content: "";
-  margin-bottom: 1rem;
-}
-
 #get-random-episode {
   font-size: 1.4rem;
   text-align: center;
@@ -116,6 +78,49 @@ br {
   background-color: #ededed;
 }
 
+/* Text */
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0px 0px 32px;
+}
+
+h2 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: -32px 0 0 0;
+}
+
+main > p {
+  text-align: left;
+  margin: 0px;
+  font-size: 1.4rem;
+}
+
+#episode-container > p {
+  line-height: 135%;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
 .error-message {
   font-size: 1.45rem;
+}
+
+/* Lines & Breaks */
+
+hr {
+  width: 100%;
+  margin: 24px 0 8px 0;
+  border: none;
+  height: 4px;
+  background-color: #444444;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-bottom: 1rem;
 }
