@@ -211,7 +211,7 @@ button.addEventListener("click", function() {
     return !excludedSeasons.includes(episode.season);
   });
   if (validEpisodes.length === 0) {
-    container.textContent = "No episodes found.";
+    container.innerHTML = "<span class='error-message'>You've excluded all the seasons. Not that there's anything wrong with that...</span>";
     return;
   }
   const randomIndex = Math.floor(Math.random() * validEpisodes.length);

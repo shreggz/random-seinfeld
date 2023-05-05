@@ -1,3 +1,7 @@
+* {
+  font-family: "Gill Sans", sans-serif;
+}
+
 body {
   max-width: 560px;
   margin: auto;
@@ -34,7 +38,6 @@ main > p {
   text-align: left;
   margin: 0px;
   font-size: 1.4rem;
-  font-family: "Gill Sans";
 }
 
 .season-filters {
@@ -45,7 +48,6 @@ main > p {
 }
 
 .season-button {
-  font-family: "Gill Sans";
   font-size: 1.2rem;
   background-color: #fafafa;
   color: #444444;
@@ -72,17 +74,14 @@ hr {
 }
 
 h1 {
-  font-family: "Gill Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   margin-top: 0px;
   margin-bottom: 32px;
-  
 }
 
 h2 {
   text-align: left;
-  font-family: "Gill Sans";
   font-weight: 600;
   font-size: 1.6rem;
   margin: 0;
@@ -91,7 +90,6 @@ h2 {
 
 #episode-container > p {
   line-height: 135%;
-  font-family: "Gill Sans";
   font-size: 1.45rem;
   font-weight: 500;
 }
@@ -105,7 +103,6 @@ br {
 
 #get-random-episode {
   font-size: 1.4rem;
-  font-family: "Gill Sans";
   text-align: center;
   width: 140px;
   padding: 6px;
@@ -119,39 +116,6 @@ br {
   background-color: #ededed;
 }
 
-/*
-body {
-  max-width: 560px;
-  margin: auto;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.error-message {
+  font-size: 1.45rem;
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h1 {
-  text-align: center;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-grow: 1;
-  gap: 32px;
-}
-
-.season-button.excluded {
-    background-color: #ccc;
-    color: #555;
-}
-
-main > hr {
-  width: 100%;
-}
-*/
