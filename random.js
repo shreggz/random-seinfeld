@@ -216,7 +216,7 @@ button.addEventListener("click", function() {
   }
   const randomIndex = Math.floor(Math.random() * validEpisodes.length);
   const randomEpisode = validEpisodes[randomIndex];
-  const episodeInfo = `<h2>Season ${randomEpisode.season}, Episode ${randomEpisode.episode}: ${randomEpisode.title}</h2>
+  const episodeInfo = `<h2>Season&nbsp;${randomEpisode.season}, Episode&nbsp;${randomEpisode.episode}: ${randomEpisode.title}</h2>
   <p>${randomEpisode.description}</p>`;
 
   container.innerHTML = episodeInfo;
