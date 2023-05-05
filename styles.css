@@ -70,12 +70,13 @@ main {
   padding: 6px;
   border: 2px solid #444444;
   background-color: #fafafa;
-  color: #444444;
+  color: rgb(186, 7, 7);
   cursor: pointer;
 }
 
 #get-random-episode:hover {
-  background-color: #ededed;
+  font-style: oblique;
+  text-shadow: -2px 2px rgb(244, 190, 190);
 }
 
 /* Text */
@@ -125,11 +126,11 @@ br {
   margin-bottom: 1rem;
 }
 
-a {
+p > a {
   text-decoration: none;
   color: rgb(186, 7, 7);
 }
 
-a:hover {
+p > a:hover {
   background-color: rgb(238, 226, 99);
 }
